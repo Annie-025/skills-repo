@@ -1,70 +1,247 @@
 {
-  "generated_for": "Codex local skills confirmation",
+  "schema_version": "1.0",
+  "last_updated": "2026-05-09",
   "skills_root": "/Users/chenxinyu/.codex/skills",
-  "personal_skills": [
+  "skills": [
     {
       "name": "web-design-guidelines",
+      "description": "Review UI code for Web Interface Guidelines compliance, including accessibility and UX best practices.",
       "category": "frontend-design-engineering",
-      "source": "hanzoskill/web-design-guidelines",
       "path": "/Users/chenxinyu/.codex/skills/web-design-guidelines",
-      "status": "installed"
+      "source": "hanzoskill/web-design-guidelines",
+      "enabled": true,
+      "priority": 75,
+      "use_cases": [
+        "UI 审查",
+        "可访问性检查",
+        "UX audit",
+        "Web 页面最佳实践"
+      ],
+      "invocation_examples": [
+        "使用 web-design-guidelines，帮我审查这个页面的 UI、可访问性和交互问题：……"
+      ],
+      "dependencies": [],
+      "needs_network": true,
+      "blocking_steps": [],
+      "conflicts": [],
+      "last_updated": "2026-05-09"
     },
     {
       "name": "vercel-react-best-practices",
+      "description": "React and Next.js performance optimization guidelines covering async waterfalls, bundle size, rendering, and server/client data patterns.",
       "category": "frontend-design-engineering",
-      "source": "hanzoskill/vercel-react-best-practices",
       "path": "/Users/chenxinyu/.codex/skills/vercel-react-best-practices",
-      "status": "installed"
+      "source": "hanzoskill/vercel-react-best-practices",
+      "enabled": true,
+      "priority": 78,
+      "use_cases": [
+        "React 性能优化",
+        "Next.js 页面重构",
+        "数据获取优化",
+        "bundle size 优化"
+      ],
+      "invocation_examples": [
+        "使用 vercel-react-best-practices，帮我检查这个 Next.js 页面是否存在数据瀑布、重复渲染和包体积问题：……"
+      ],
+      "dependencies": [],
+      "needs_network": false,
+      "blocking_steps": [],
+      "conflicts": [],
+      "last_updated": "2026-05-09"
     },
     {
       "name": "baoyu-cover-image",
+      "description": "Generate article cover images with type, palette, rendering, text, and mood controls.",
       "category": "content-visuals",
-      "source": "JimLiu/baoyu-skills",
       "path": "/Users/chenxinyu/.codex/skills/baoyu-cover-image",
-      "status": "installed"
+      "source": "JimLiu/baoyu-skills",
+      "enabled": true,
+      "priority": 70,
+      "use_cases": [
+        "文章封面",
+        "公众号头图",
+        "课程封面",
+        "宣传图"
+      ],
+      "invocation_examples": [
+        "使用 baoyu-cover-image，为下面这篇文章生成 16:9 中文封面图，要求标题清晰、科技感、不要 logo：……"
+      ],
+      "dependencies": [
+        "image generation backend"
+      ],
+      "needs_network": false,
+      "blocking_steps": [
+        "生成前需要确认风格、比例、语言和后端；如明确说“直接生成”可跳过确认"
+      ],
+      "conflicts": [],
+      "last_updated": "2026-05-09"
     },
     {
       "name": "baoyu-infographic",
+      "description": "Generate professional infographics with layout and visual style selection.",
       "category": "content-visuals",
-      "source": "JimLiu/baoyu-skills",
       "path": "/Users/chenxinyu/.codex/skills/baoyu-infographic",
-      "status": "installed"
+      "source": "JimLiu/baoyu-skills",
+      "enabled": true,
+      "priority": 72,
+      "use_cases": [
+        "信息图",
+        "视觉总结",
+        "知识卡",
+        "研究摘要"
+      ],
+      "invocation_examples": [
+        "使用 baoyu-infographic，把下面的研究结论做成一张高密度信息图，先推荐 layout 和 style：……"
+      ],
+      "dependencies": [
+        "image generation backend"
+      ],
+      "needs_network": false,
+      "blocking_steps": [
+        "默认需要确认 layout、style、比例、语言和生成后端"
+      ],
+      "conflicts": [],
+      "last_updated": "2026-05-09"
     },
     {
       "name": "baoyu-diagram",
+      "description": "Create professional SVG diagrams including architecture diagrams, flowcharts, sequence diagrams, mind maps, timelines, and conceptual diagrams.",
       "category": "diagrams",
-      "source": "JimLiu/baoyu-skills",
       "path": "/Users/chenxinyu/.codex/skills/baoyu-diagram",
-      "status": "installed"
+      "source": "JimLiu/baoyu-skills",
+      "enabled": true,
+      "priority": 80,
+      "use_cases": [
+        "流程图",
+        "架构图",
+        "概念图",
+        "时序图",
+        "状态机",
+        "数据流"
+      ],
+      "invocation_examples": [
+        "使用 baoyu-diagram，把下面的大创项目执行流程画成 Mermaid 流程图，并标出每个阶段的输入、输出和负责人：……"
+      ],
+      "dependencies": [],
+      "needs_network": false,
+      "blocking_steps": [],
+      "conflicts": [],
+      "last_updated": "2026-05-09"
     },
     {
       "name": "baoyu-translate",
+      "description": "Translate articles and documents with quick, normal, and refined modes plus glossary and audience preferences.",
       "category": "writing-localization",
-      "source": "JimLiu/baoyu-skills",
       "path": "/Users/chenxinyu/.codex/skills/baoyu-translate",
-      "status": "installed"
+      "source": "JimLiu/baoyu-skills",
+      "enabled": true,
+      "priority": 76,
+      "use_cases": [
+        "翻译",
+        "本地化",
+        "精翻",
+        "术语一致性",
+        "长文分块翻译"
+      ],
+      "invocation_examples": [
+        "使用 baoyu-translate，把以下英文内容本地化为中文，目标读者是技术产品经理，要求保留专业术语：……"
+      ],
+      "dependencies": [
+        "bun or npx"
+      ],
+      "needs_network": false,
+      "blocking_steps": [
+        "首次使用需要创建 EXTEND.md 偏好"
+      ],
+      "conflicts": [],
+      "last_updated": "2026-05-09"
     },
     {
       "name": "baoyu-format-markdown",
+      "description": "Format plain text or Markdown with frontmatter, titles, summaries, headings, lists, code blocks, and CJK typography cleanup.",
       "category": "writing-localization",
-      "source": "JimLiu/baoyu-skills",
       "path": "/Users/chenxinyu/.codex/skills/baoyu-format-markdown",
-      "status": "installed"
+      "source": "JimLiu/baoyu-skills",
+      "enabled": true,
+      "priority": 74,
+      "use_cases": [
+        "Markdown 排版",
+        "Obsidian 笔记整理",
+        "会议记录整理",
+        "简历结构优化"
+      ],
+      "invocation_examples": [
+        "使用 baoyu-format-markdown，帮我把以下内容整理成 Obsidian 笔记，要求保留 H1/H2/H3 层级和复习问题：……"
+      ],
+      "dependencies": [
+        "bun or npx"
+      ],
+      "needs_network": false,
+      "blocking_steps": [],
+      "conflicts": [],
+      "last_updated": "2026-05-09"
     }
   ],
-  "excluded_because_builtin_or_plugin": [
-    "imagegen",
-    "openai-docs",
-    "plugin-creator",
-    "skill-creator",
-    "skill-installer",
-    "browser-use",
-    "chrome",
-    "figma",
-    "github",
-    "presentations",
-    "documents",
-    "spreadsheets"
+  "excluded_skills": [
+    {
+      "name": "imagegen",
+      "reason": "系统内置图片生成和编辑能力，不需要重复安装为个人 skill。",
+      "conflicts_with": "baoyu image generation backends only when they duplicate native image generation"
+    },
+    {
+      "name": "openai-docs",
+      "reason": "系统内置 OpenAI 官方文档查询 skill。",
+      "conflicts_with": "custom OpenAI docs skills"
+    },
+    {
+      "name": "plugin-creator",
+      "reason": "系统内置插件创建能力。",
+      "conflicts_with": "custom plugin scaffolding skills"
+    },
+    {
+      "name": "skill-creator",
+      "reason": "系统内置 skill 创建能力。",
+      "conflicts_with": "custom skill authoring skills"
+    },
+    {
+      "name": "skill-installer",
+      "reason": "系统内置 skill 安装能力。",
+      "conflicts_with": "custom skill installer skills"
+    },
+    {
+      "name": "browser-use",
+      "reason": "Browser / Chrome 插件已提供浏览器自动化。",
+      "conflicts_with": "Browser plugin"
+    },
+    {
+      "name": "figma",
+      "reason": "Figma 插件已提供设计、设计系统和 Code Connect 工作流。",
+      "conflicts_with": "Figma plugin"
+    },
+    {
+      "name": "github",
+      "reason": "GitHub 插件已提供 PR、Issue、CI 和发布工作流。",
+      "conflicts_with": "GitHub plugin"
+    },
+    {
+      "name": "pptx",
+      "reason": "Presentations 插件已能生成和验证 PPTX。",
+      "conflicts_with": "Presentations plugin"
+    },
+    {
+      "name": "docx",
+      "reason": "Documents 插件已能生成、编辑和验证 DOCX。",
+      "conflicts_with": "Documents plugin"
+    },
+    {
+      "name": "xlsx",
+      "reason": "Spreadsheets 插件已能处理 XLSX / CSV。",
+      "conflicts_with": "Spreadsheets plugin"
+    },
+    {
+      "name": "UI-UX-PRO-MAX",
+      "reason": "大而全，可能与现有前端设计规则和 Codex 前端规范重叠；仅在明确需要独立设计系统生成器时考虑。",
+      "conflicts_with": "web-design-guidelines, vercel-react-best-practices"
+    }
   ]
 }
-
