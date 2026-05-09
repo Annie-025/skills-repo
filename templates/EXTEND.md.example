@@ -1,11 +1,5 @@
 # EXTEND.md 示例
 
-这个文件可以复制到需要首次配置的 skill 偏好目录中，例如：
-
-- `.baoyu-skills/baoyu-translate/EXTEND.md`
-- `$HOME/.baoyu-skills/baoyu-translate/EXTEND.md`
-- `.baoyu-skills/baoyu-format-markdown/EXTEND.md`
-
 ## 用户偏好的写作语言
 
 - 默认输出语言：`zh-CN`
@@ -16,16 +10,13 @@
 
 - 笔记：Markdown，保留 H1/H2/H3 层级
 - 报告：Markdown，可进一步转成 DOCX / PPTX
-- 翻译：原文结构优先，必要时做本地化改写
-- 摘要：先给结论，再给要点和行动项
+- 轻量演示：HTML presentation，适合非正式小组会议
 
 ## 禁止事项
 
 - 不要虚构引用、数据、作者、机构或来源
-- 不要删除关键限定条件
 - 不要把不确定内容写成事实
 - 不要为了流畅而改变原意
-- 不要使用无法验证的品牌 logo 或官方标识
 
 ## 引用规范
 
@@ -39,17 +30,5 @@
 | --- | --- | --- |
 | workflow | 工作流 | 根据语境也可译为流程 |
 | skill | skill / 技能 | 指 Codex 或 ChatGPT 的可复用能力时保留 skill |
-| localization | 本地化 | 不等同于直译 |
-| rubric | 评分标准 | 教育、商赛、评审语境 |
-
-## 示例
-
-```text
-请将这篇英文文章翻译成中文，目标读者是技术产品经理。要求：
-1. 保留专业术语和关键英文名词；
-2. 对文化背景或行业缩写补充简短译注；
-3. 不虚构引用；
-4. 输出 Markdown；
-5. 最后给出 5 条可复习问题。
-```
+| presentation | 演示 | 正式交付用 PPTX，非正式可用 HTML |
 

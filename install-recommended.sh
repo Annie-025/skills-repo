@@ -25,6 +25,5 @@ python "$INSTALLER" --repo JimLiu/baoyu-skills --path \
 
 echo "[OK] Installed recommended skills. Restart Codex to pick up new skills."
 echo "[OK] You can list managed skills with: python scripts/skills-manager.py list"
-
 python "$MANAGER" doctor
 
