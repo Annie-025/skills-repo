@@ -1,0 +1,70 @@
+{
+  "generated_for": "Codex local skills confirmation",
+  "skills_root": "/Users/chenxinyu/.codex/skills",
+  "personal_skills": [
+    {
+      "name": "web-design-guidelines",
+      "category": "frontend-design-engineering",
+      "source": "hanzoskill/web-design-guidelines",
+      "path": "/Users/chenxinyu/.codex/skills/web-design-guidelines",
+      "status": "installed"
+    },
+    {
+      "name": "vercel-react-best-practices",
+      "category": "frontend-design-engineering",
+      "source": "hanzoskill/vercel-react-best-practices",
+      "path": "/Users/chenxinyu/.codex/skills/vercel-react-best-practices",
+      "status": "installed"
+    },
+    {
+      "name": "baoyu-cover-image",
+      "category": "content-visuals",
+      "source": "JimLiu/baoyu-skills",
+      "path": "/Users/chenxinyu/.codex/skills/baoyu-cover-image",
+      "status": "installed"
+    },
+    {
+      "name": "baoyu-infographic",
+      "category": "content-visuals",
+      "source": "JimLiu/baoyu-skills",
+      "path": "/Users/chenxinyu/.codex/skills/baoyu-infographic",
+      "status": "installed"
+    },
+    {
+      "name": "baoyu-diagram",
+      "category": "diagrams",
+      "source": "JimLiu/baoyu-skills",
+      "path": "/Users/chenxinyu/.codex/skills/baoyu-diagram",
+      "status": "installed"
+    },
+    {
+      "name": "baoyu-translate",
+      "category": "writing-localization",
+      "source": "JimLiu/baoyu-skills",
+      "path": "/Users/chenxinyu/.codex/skills/baoyu-translate",
+      "status": "installed"
+    },
+    {
+      "name": "baoyu-format-markdown",
+      "category": "writing-localization",
+      "source": "JimLiu/baoyu-skills",
+      "path": "/Users/chenxinyu/.codex/skills/baoyu-format-markdown",
+      "status": "installed"
+    }
+  ],
+  "excluded_because_builtin_or_plugin": [
+    "imagegen",
+    "openai-docs",
+    "plugin-creator",
+    "skill-creator",
+    "skill-installer",
+    "browser-use",
+    "chrome",
+    "figma",
+    "github",
+    "presentations",
+    "documents",
+    "spreadsheets"
+  ]
+}
+
